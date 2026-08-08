@@ -1,0 +1,4 @@
+interface:
+  display_name: "赛博黑影儿 · ShadowRunner"
+  short_description: "用跑者—创作者框架诊断训练、进步、决策、表达与行动边界"
+  default_prompt: "使用 $shadowrunner 分析我的跑步瓶颈，并给出有边界、可验证的下一步。"
