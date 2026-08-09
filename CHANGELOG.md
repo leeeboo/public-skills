@@ -2,6 +2,16 @@
 
 本项目遵循语义化版本的基本格式记录公开发行版。
 
+## 1.1.0 — 2026-08-09
+
+- 新增 `coros-workout-review`：先检查连接、授权、同步与数据完整性，再复盘单次跑步。
+- ChatGPT Work、ChatGPT 桌面版中的 Codex 与 Codex CLI 统一优先从插件目录搜索并连接 COROS；不再把 Developer Mode 或手动 MCP 作为普通用户路径。
+- 新增 Claude、OpenClaw、Kimi Claw、Codex、Claude Code、Gemini CLI、Cursor、VS Code、Cline、Chatbox 与 Cherry Studio 的分级连接引导。
+- 新增非技术用户的逐步配置状态机、最小验证、故障诊断和安全停止条件。
+- 新增单次跑步的证据分层、结构识别、输出—代价分析、固定输出与置信度规则。
+- 将 ShadowRunner 的阶段—瓶颈、适用域、边际收益、最小可逆验证与记录更新框架内置到 `coros-workout-review`，不再依赖单独安装 `shadowrunner`。
+- 将 COROS 训练、健康、位置、账号凭据与内部标识纳入最小权限和公开边界；v1 禁用 FIT/GPS 读取并始终隐藏精确位置。
+
 ## 1.0.0 — 2026-08-08
 
 - 正式采用“赛博黑影儿 · ShadowRunner”名称与 `shadowrunner` 机器标识。
