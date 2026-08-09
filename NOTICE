@@ -1,4 +1,4 @@
-ShadowRunner — Rights and Attribution Notice
+赛博黑影儿 Public Skills — Rights and Attribution Notice
 Copyright © 2026 赛博黑影儿（ShadowRunner）
 
 1. Licensed material
@@ -14,6 +14,9 @@ Public License (CC BY-NC-SA 4.0):
 - shadowrunner/SKILL.md
 - shadowrunner/references/*.md
 - shadowrunner/agents/openai.yaml
+- coros-workout-review/SKILL.md
+- coros-workout-review/references/*.md
+- coros-workout-review/agents/openai.yaml
 
 The complete license text is in LICENSE. The canonical license page is:
 https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -29,12 +32,18 @@ history or discussion.
 The CC license text itself is provided by Creative Commons and is not claimed
 as original project authorship.
 
+The COROS and client setup references link to third-party official
+documentation. Those external pages, product names, trademarks, interfaces,
+and services are not included in this license.
+
 3. Rights outside the copyright license
 
 The CC license does not grant trademark rights, endorsement rights, or rights
 of privacy, publicity, personality, name, image, likeness, or voice. “赛博黑影儿”
 and “ShadowRunner” identify this project; attribution must not imply endorsement
 by the project author or by any real person, organization, channel, or brand.
+“COROS” and the names of supported AI clients are used only to describe
+compatibility; all related trademarks remain with their respective owners.
 
 These statements identify rights outside the scope of the copyright license;
 they do not add restrictions to permissions that CC BY-NC-SA 4.0 already grants.

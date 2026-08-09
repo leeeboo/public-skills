@@ -1,0 +1,4 @@
+interface:
+  display_name: "COROS训练复盘｜赛博黑影儿"
+  short_description: "自动检查 COROS 连接，并用内置赛博黑影儿框架完成单次跑步复盘"
+  default_prompt: "使用 $coros-workout-review 检查我的 COROS 连接，并复盘最近一次跑步训练。"
