@@ -2,9 +2,9 @@
 
 面向跑者的公开 Skills：用证据还原训练，用边界约束结论，再给一个低风险、可验证的下一步。
 
-当前版本：`v1.1.0`
+当前版本：`v1.2.0`
 
-发布日期：`2026-08-09`
+发布日期：`2026-08-16`
 
 ## 已发布 Skills
 
@@ -23,6 +23,8 @@
 ### COROS 训练复盘｜赛博黑影儿
 
 `coros-workout-review/` 会先检查 COROS 连接、授权、同步与数据完整性，再把单次跑步拆成训练结构、关键证据、主要问题和下一步。它已内置赛博黑影儿的阶段—瓶颈、适用域、边际收益和最小可逆验证框架，不依赖另行安装 `shadowrunner/`。
+
+当 FIT / COROS 的温度或湿度缺失、明显无效，或用户明确标记为不可信时，可在本机安全配置 `OPENWEATHERMAP_API_KEY`，经单次授权后用 OpenWeatherMap One Call API 4.0 补充历史天气上下文。默认不读取或上传 FIT、GPS 和完整路线；天气请求只使用约 `0.1°` 粗化位置与活动时间窗，结果不会覆盖可信设备值。
 
 第一版中，ChatGPT Work、ChatGPT 桌面版中的 Codex 与 Codex CLI 统一优先从官方插件目录搜索并连接 COROS；Codex 桌面版的具体入口是“插件 → 浏览目录（Plugins → Browse directory）”。Claude remote connector 与 OpenClaw 也属于推荐/正式路径。高级/兼容路径覆盖 Claude Code、Gemini CLI、Cursor 与 VS Code；Kimi Claw、Cline、Chatbox、Cherry Studio 采用条件、有限或实验引导。对官方尚未证实的连接能力会明确停止，不生成猜测配置。
 
@@ -54,6 +56,8 @@ ln -s "$(pwd)/public-skills/coros-workout-review" "$HOME/.agents/skills/coros-wo
 
 `shadowrunner` 不需要运行时依赖；`coros-workout-review` 已包含其训练复盘所需的核心方法，不需要额外安装 `shadowrunner/`。它仍需要 COROS 账号，以及支持 COROS 插件或 remote MCP + 浏览器授权的 AI 客户端；它不会要求用户把 COROS 密码或 Token 发进聊天。
 
+天气补全是可选的第三方 API 能力。请把 `OPENWEATHERMAP_API_KEY` 放在客户端 secret、本机密钥管理器或进程环境中，不要粘贴到聊天、提交到仓库或写进命令参数；One Call API 4.0 的套餐和额度以 OpenWeather 官方账户为准。
+
 ## 目录
 
 ```text
@@ -75,9 +79,13 @@ public-skills/
     ├── SKILL.md
     ├── agents/
     │   └── openai.yaml
+    ├── scripts/
+    │   ├── LICENSE
+    │   └── openweather4.py
     └── references/
         ├── client-connections.md
         ├── connection-diagnostics.md
+        ├── openweathermap.md
         ├── review-methodology.md
         └── privacy-safety.md
 ```
@@ -91,7 +99,7 @@ public-skills/
 - 真实人物的身份、健康、家庭、居住、职业或财务资料；
 - 对真实人物的心理画像、人格归因或私生活推断；
 - 用户名、UID、Cookie、Token 或平台访问规避细节；
-- 任何用户的 COROS 训练、健康、位置或账号数据。
+- 任何用户的 COROS 训练、健康、位置或账号数据；天气辅助脚本只处理用户主动提供的粗略位置和时间窗，不包含用户活动数据。
 
 公开版不是私人研究或训练数据的可复现语料包，也不承诺复刻任何真实人物。
 

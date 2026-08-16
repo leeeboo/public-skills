@@ -18,6 +18,11 @@ Public License (CC BY-NC-SA 4.0):
 - coros-workout-review/references/*.md
 - coros-workout-review/agents/openai.yaml
 
+The original helper script `coros-workout-review/scripts/openweather4.py` is
+software code licensed under the MIT License. Its complete license text is in
+`coros-workout-review/scripts/LICENSE`; it is not licensed under the CC
+BY-NC-SA terms above.
+
 The complete license text is in LICENSE. The canonical license page is:
 https://creativecommons.org/licenses/by-nc-sa/4.0/
 
