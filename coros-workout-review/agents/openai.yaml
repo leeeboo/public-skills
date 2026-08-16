@@ -1,4 +1,4 @@
 interface:
-  display_name: "COROS训练复盘｜赛博黑影儿"
+  display_name: "COROS 训练复盘｜赛博黑影儿"
   short_description: "检查 COROS、复盘跑步，并按需补充天气上下文数据"
-  default_prompt: "使用 $coros-workout-review 检查我的 COROS 连接，复盘最近一次跑步；如果温湿度缺失，先询问是否启用 OpenWeatherMap 补全。"
+  default_prompt: "使用 $coros-workout-review 检查我的 COROS 连接，复盘最近一次跑步；如果温湿度缺失，可选引导配置 OpenWeatherMap，未配置或拒绝配置时询问我运动时的温湿度。"
